@@ -1,0 +1,29 @@
+package testcase;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
+
+import base.BaseTest;
+import base.BaseTest2;
+
+@Test
+public class MySecond extends BaseTest2 {
+	public static void LoginTest1() throws InterruptedException {
+
+	driver.findElement(By.xpath(loc.getProperty("clour"))).sendKeys("125,100,135");
+	Thread.sleep(3000);
+	driver.findElement(By.xpath(loc.getProperty("date"))).sendKeys("10/9/2023");
+	
+	Thread.sleep(3000);
+	driver.findElement(By.xpath(loc.getProperty("email"))).sendKeys("akhilavemulapalli1@gmail.com");
+	Thread.sleep(3000);
+	driver.findElement(By.xpath(loc.getProperty("month"))).sendKeys("Oct");
+	Thread.sleep(3000);
+	WebElement x = driver.findElement(By.xpath("//input[@id='number-field']")).clear();
+	x.sendKeys("45");
+	Thread.sleep(3000);
+	driver.findElement(By.xpath(loc.getProperty("submit"))).click();
+
+}
+}

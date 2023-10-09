@@ -1,0 +1,4 @@
+username = //input[@name='username']
+password = //input[@name='password']
+comments = //textarea[@name='comments']
+browse = //input[@name='filename']

@@ -1,0 +1,16 @@
+package testcase;
+
+import org.openqa.selenium.By;
+
+import base.BaseTest;
+
+public class MyFirstTest1 extends BaseTest {
+
+	
+	
+	public static void LoginTest()
+	{
+		driver.findElement(By.xpath("//textarea[@id='APjFqb']")).sendKeys("prospect");
+
+	}
+}

@@ -1,0 +1,17 @@
+package testcase;
+
+import org.openqa.selenium.By;
+import org.testng.annotations.Test;
+
+import base.BaseTest;
+
+public class MyFirstTest1 extends BaseTest {
+
+	
+	@Test
+	public static void LoginTest()
+	{
+		driver.findElement(By.xpath(loc.getProperty("text field "))).sendKeys("prospect");
+
+	}
+}

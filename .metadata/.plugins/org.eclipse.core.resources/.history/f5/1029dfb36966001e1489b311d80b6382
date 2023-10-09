@@ -1,0 +1,33 @@
+package testcase;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
+
+import base.BaseTest;
+
+public class MyFirstTest1 extends BaseTest {
+
+	
+	@Test
+	public static void LoginTest() throws InterruptedException
+	{
+		driver.findElement(By.xpath(loc.getProperty("username"))).sendKeys("akhila");
+		Thread.sleep(3000);
+		driver.findElement(By.xpath(loc.getProperty("password"))).sendKeys("1234");
+		Thread.sleep(3000);
+		driver.findElement(By.xpath(loc.getProperty("comments"))).sendKeys("New test");
+		Thread.sleep(3000);
+		WebElement l = driver.findElement(By.xpath("//input[@name='filename']"));
+				l.click();
+		l.sendKeys("C:\\Users\\user\\Downloads\\tsting.txt");
+		
+		
+		
+
+
+		Thread.sleep(3000);
+	}
+	
+	
+}
