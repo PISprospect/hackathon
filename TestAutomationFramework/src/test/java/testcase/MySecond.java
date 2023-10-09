@@ -18,6 +18,7 @@ public class MySecond extends BaseTest2 {
 	driver.findElement(By.xpath(loc.getProperty("email"))).clear();
 		driver.findElement(By.xpath(loc.getProperty("email"))).sendKeys("akhilavemulapalli1@gmail.com");
 	Thread.sleep(3000);
+		driver.findElement(By.xpath(loc.getProperty("month"))).clear();
 	driver.findElement(By.xpath(loc.getProperty("month"))).sendKeys("October");
 	driver.findElement(By.xpath(loc.getProperty("month"))).sendKeys(Keys.TAB);
 	driver.findElement(By.xpath(loc.getProperty("month"))).sendKeys("2023");
